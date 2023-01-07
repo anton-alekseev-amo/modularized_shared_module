@@ -9,12 +9,20 @@
 /* Begin PBXBuildFile section */
 		69874A382969BC9900AA3DD0 /* modularized_shared_module.docc in Sources */ = {isa = PBXBuildFile; fileRef = 69874A372969BC9900AA3DD0 /* modularized_shared_module.docc */; };
 		69874A392969BC9900AA3DD0 /* modularized_shared_module.h in Headers */ = {isa = PBXBuildFile; fileRef = 69874A362969BC9900AA3DD0 /* modularized_shared_module.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69874A602969C01A00AA3DD0 /* SharedDisplayItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69874A5F2969C01A00AA3DD0 /* SharedDisplayItem.swift */; };
+		69874A672969C08C00AA3DD0 /* SharedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69874A662969C08C00AA3DD0 /* SharedTableViewCell.swift */; };
+		7F6433EDC87D950CC3AC4A7A /* Pods_modularized_shared_module.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1456E943715FD4DE861EA614 /* Pods_modularized_shared_module.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1456E943715FD4DE861EA614 /* Pods_modularized_shared_module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_modularized_shared_module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54BE6D6318E59BDC62DC74FC /* Pods-modularized_shared_module.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modularized_shared_module.debug.xcconfig"; path = "Target Support Files/Pods-modularized_shared_module/Pods-modularized_shared_module.debug.xcconfig"; sourceTree = "<group>"; };
+		66433B15A9D0E639401B199B /* Pods-modularized_shared_module.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-modularized_shared_module.release.xcconfig"; path = "Target Support Files/Pods-modularized_shared_module/Pods-modularized_shared_module.release.xcconfig"; sourceTree = "<group>"; };
 		69874A332969BC9900AA3DD0 /* modularized_shared_module.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = modularized_shared_module.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		69874A362969BC9900AA3DD0 /* modularized_shared_module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = modularized_shared_module.h; sourceTree = "<group>"; };
 		69874A372969BC9900AA3DD0 /* modularized_shared_module.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = modularized_shared_module.docc; sourceTree = "<group>"; };
+		69874A5F2969C01A00AA3DD0 /* SharedDisplayItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedDisplayItem.swift; sourceTree = "<group>"; };
+		69874A662969C08C00AA3DD0 /* SharedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F6433EDC87D950CC3AC4A7A /* Pods_modularized_shared_module.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +42,8 @@
 			children = (
 				69874A352969BC9900AA3DD0 /* modularized_shared_module */,
 				69874A342969BC9900AA3DD0 /* Products */,
+				F1CB49F5ED7CB17F79A6487B /* Pods */,
+				6ACCBF228628D6F387168DBB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,10 +58,38 @@
 		69874A352969BC9900AA3DD0 /* modularized_shared_module */ = {
 			isa = PBXGroup;
 			children = (
+				69874A5E2969BFCE00AA3DD0 /* Shared */,
 				69874A362969BC9900AA3DD0 /* modularized_shared_module.h */,
 				69874A372969BC9900AA3DD0 /* modularized_shared_module.docc */,
 			);
 			path = modularized_shared_module;
+			sourceTree = "<group>";
+		};
+		69874A5E2969BFCE00AA3DD0 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				69874A5F2969C01A00AA3DD0 /* SharedDisplayItem.swift */,
+				69874A662969C08C00AA3DD0 /* SharedTableViewCell.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		6ACCBF228628D6F387168DBB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1456E943715FD4DE861EA614 /* Pods_modularized_shared_module.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1CB49F5ED7CB17F79A6487B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54BE6D6318E59BDC62DC74FC /* Pods-modularized_shared_module.debug.xcconfig */,
+				66433B15A9D0E639401B199B /* Pods-modularized_shared_module.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +110,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69874A3C2969BC9900AA3DD0 /* Build configuration list for PBXNativeTarget "modularized_shared_module" */;
 			buildPhases = (
+				9F780CF2C864BEE400B3D4EC /* [CP] Check Pods Manifest.lock */,
 				69874A2E2969BC9900AA3DD0 /* Headers */,
 				69874A2F2969BC9900AA3DD0 /* Sources */,
 				69874A302969BC9900AA3DD0 /* Frameworks */,
@@ -127,12 +167,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9F780CF2C864BEE400B3D4EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-modularized_shared_module-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		69874A2F2969BC9900AA3DD0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69874A602969C01A00AA3DD0 /* SharedDisplayItem.swift in Sources */,
 				69874A382969BC9900AA3DD0 /* modularized_shared_module.docc in Sources */,
+				69874A672969C08C00AA3DD0 /* SharedTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +328,7 @@
 		};
 		69874A3D2969BC9900AA3DD0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54BE6D6318E59BDC62DC74FC /* Pods-modularized_shared_module.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -289,6 +357,7 @@
 		};
 		69874A3E2969BC9900AA3DD0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66433B15A9D0E639401B199B /* Pods-modularized_shared_module.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
