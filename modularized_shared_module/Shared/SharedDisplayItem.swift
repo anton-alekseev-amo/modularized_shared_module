@@ -19,4 +19,5 @@ public struct SharedDisplayItem: Identifiable {
         self.title = title
         self.subtitle = subtitle
     }
+    
 }
